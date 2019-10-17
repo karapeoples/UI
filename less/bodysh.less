@@ -9,14 +9,53 @@ body{
         flex-direction:column;
         color:@colorE;
         h1{
-            font-size:25px;
+            font-size:75px;
+            font-family:@fontTitle;
         }
-        p{
-            font-size:15px;
+        .cta{
+            font-size:20px;
+            font-family:@fontText;
+            color:@colorE;
+            width:98%;
+            margin:2%;
+            text-align:center;
         }
         button{
             .btn();
         }
     }
+ .secondTitle{
+     font-size:25px;
+     font-family:@fontTitle;
+     border-bottom: 2px groove @colorE;
+     width:98%;
+     text-align:center;
+ }
+ .features{
+     .flex(space-evenly,center);
+     .feature1, .feature2, .feature3{
+         width:30%;
+         margin-top:5%;
+         .labor{
+             width:100%;
+             i{
+                 font-size:50px;
+                 .flex(center,center);
+                 color:@colorE;
+             }
+             .info{
+                 width: 100%;
+                 p{
+                     font-family:@fontText;
+                     font-size: 15px;
+                     color:@colorE;
+                 }
+                
+             }
+         } img{
+                     width:100%;
+                     border-radius:5%;
+                 }
+     }
+ }
 }
-

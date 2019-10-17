@@ -357,6 +357,12 @@ template {
   cursor: grabbing;
   font-family: 'Merriweather', serif;
 }
+footer {
+  width: 100%;
+  background: #171717;
+  color: #F2F4F3;
+  text-align: center;
+}
 body {
   background: #F2F4F3;
 }
