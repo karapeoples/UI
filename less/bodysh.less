@@ -1,61 +1,76 @@
-body{
-	background-image:  url("../images/splash.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+body {
+	background-image: url("../images/splash.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
 
-    .title{
-        .flex(center,center);
-        flex-direction:column;
-        color:@colorE;
-        h1{
-            font-size:75px;
-            font-family:@fontTitle;
-        }
-        .cta{
-            font-size:20px;
-            font-family:@fontText;
-            color:@colorE;
-            width:98%;
-            margin:2%;
-            text-align:center;
-        }
-        button{
-            .btn();
-        }
-    }
- .secondTitle{
-     font-size:25px;
-     font-family:@fontTitle;
-     border-bottom: 2px groove @colorE;
-     width:98%;
-     text-align:center;
- }
- .features{
-     .flex(space-evenly,center);
-     .feature1, .feature2, .feature3{
-         width:30%;
-         margin-top:5%;
-         .labor{
-             width:100%;
-             i{
-                 font-size:50px;
-                 .flex(center,center);
-                 color:@colorE;
-             }
-             .info{
-                 width: 100%;
-                 p{
-                     font-family:@fontText;
-                     font-size: 15px;
-                     color:@colorE;
-                 }
-                
-             }
-         } img{
-                     width:100%;
-                     border-radius:5%;
-                 }
-     }
- }
+	.title {
+		.flex(center, center);
+		flex-direction: column;
+		color: @colorE;
+		h1 {
+			font-size: 75px;
+			font-family: @fontTitle;
+		}
+		.cta {
+			font-size: 20px;
+			font-family: @fontText;
+			color: @colorE;
+			width: 98%;
+			margin: 2%;
+			text-align: center;
+		}
+		button {
+			.btn();
+		}
+	}
+	.secondTitle {
+		font-size: 25px;
+		font-family: @fontTitle;
+		border-bottom: 2px groove @colorE;
+		width: 98%;
+		text-align: center;
+	}
+	.features {
+		.flex(space-evenly, center);
+		.feature1,
+		.feature2,
+		.feature3 {
+			width: 30%;
+			margin-top: 5%;
+			.labor {
+				width: 100%;
+				i {
+					font-size: 50px;
+					.flex(center, center);
+					color: @colorE;
+				}
+				.info {
+					width: 100%;
+					p {
+						font-family: @fontText;
+						font-size: 15px;
+						color: @colorE;
+					}
+				}
+			}
+			img {
+				width: 100%;
+				border-radius: 5%;
+			}
+		}
+	}
+}
+
+@media @phone{
+	
+	h1{
+		text-align:center;
+	}
+	.features{
+		flex-direction:column-reverse;
+		width:300%;
+		border:@border2;
+	}
+	
 }

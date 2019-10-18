@@ -336,6 +336,11 @@ template {
   color: #6e7dab;
   font-family: 'Merriweather', serif;
 }
+@media (max-width: 500px) {
+  .navBar .buttons button {
+    font-size: 15px;
+  }
+}
 .navBar .buttons button:hover {
   background: #6e7dab;
   color: #F2F4F3;
@@ -356,6 +361,15 @@ template {
   color: #F2F4F3;
   cursor: grabbing;
   font-family: 'Merriweather', serif;
+}
+@media (max-width: 500px) {
+  .navBar {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .navBar .logo {
+    width: 100%;
+  }
 }
 footer {
   width: 100%;
@@ -400,6 +414,11 @@ body .title button {
   border: 3px groove #ff822e;
   color: #6e7dab;
   font-family: 'Merriweather', serif;
+}
+@media (max-width: 500px) {
+  body .title button {
+    font-size: 15px;
+  }
 }
 body .title button:hover {
   background: #6e7dab;
@@ -454,4 +473,14 @@ body .features .feature2 img,
 body .features .feature3 img {
   width: 100%;
   border-radius: 5%;
+}
+@media (max-width: 500px) {
+  h1 {
+    text-align: center;
+  }
+  .features {
+    flex-direction: column-reverse;
+    width: 300%;
+    border: 1px solid green;
+  }
 }
