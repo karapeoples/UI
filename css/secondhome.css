@@ -307,17 +307,17 @@ template {
   display: flex;
   width: 98%;
   margin: 1%;
-  background: #171717;
+  background: #575366;
+  border: 3px groove #171717;
 }
 .navBar .logo {
   width: 33%;
   margin: 1%;
-  text-decoration: underline overline #ff822e;
-  font-size: 50px;
-  color: #F2F4F3;
-  text-align: center;
-  margin-top: 2%;
-  font-family: 'Merriweather', serif;
+}
+.navBar .logo img {
+  width: 100%;
+  border: 5px groove #ff822e;
+  border-radius: 5%;
 }
 .navBar .buttons {
   width: 33%;
@@ -333,7 +333,7 @@ template {
   font-size: 25px;
   border-radius: 5px;
   border: 3px groove #ff822e;
-  color: #6e7dab;
+  color: #171717;
   font-family: 'Merriweather', serif;
 }
 @media (max-width: 500px) {
@@ -345,6 +345,9 @@ template {
   background: #6e7dab;
   color: #F2F4F3;
 }
+.navBar .buttons .btnA {
+  margin-top: 5%;
+}
 .navBar .nav {
   width: 33%;
   margin: 1%;
@@ -353,14 +356,24 @@ template {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  border: 5px groove #ff822e;
+  border-radius: 5%;
+}
+.navBar .nav nav .linkA {
+  margin-bottom: 5%;
 }
 .navBar .nav nav a {
-  margin: 1%;
-  text-decoration: underline overline #ff822e;
+  margin: 2%;
+  text-decoration: underline overline #F2F4F3;
   font-size: 25px;
-  color: #F2F4F3;
+  color: #171717;
   cursor: grabbing;
   font-family: 'Merriweather', serif;
+  padding: 1%;
+}
+.navBar .nav nav a:hover {
+  color: #ff822e;
 }
 @media (max-width: 500px) {
   .navBar {
@@ -373,8 +386,8 @@ template {
 }
 footer {
   width: 100%;
-  background: #171717;
-  color: #F2F4F3;
+  background: #575366;
+  color: #171717;
   text-align: center;
 }
 body {
@@ -412,7 +425,7 @@ body .title button {
   font-size: 25px;
   border-radius: 5px;
   border: 3px groove #ff822e;
-  color: #6e7dab;
+  color: #171717;
   font-family: 'Merriweather', serif;
 }
 @media (max-width: 500px) {

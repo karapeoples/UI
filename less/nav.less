@@ -2,18 +2,19 @@
 	display: flex;
 	width: 98%;
 	margin: 1%;
-	background: @colorA;
+	background: @colorE;
+	border: 3px groove @colorA;
 
 	.logo {
 		width: 33%;
 		margin: 1%;
 		margin: 1%;
-		text-decoration: underline overline @colorF;
-		font-size: 50px;
-		color: @colorB;
-		text-align: center;
-		margin-top: 2%;
-		font-family: @fontTitle;
+		img{
+			width:100%;
+			border: 5px groove @colorF;
+			border-radius: 5%;
+			
+		}
 	}
 
 	.buttons {
@@ -21,7 +22,13 @@
 		margin: 1%;
 		button {
 			.btn();
-		}
+}
+
+	.btnA{
+		margin-top: 5%;
+
+			}
+		
 	}
 
 	.nav {
@@ -32,13 +39,26 @@
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+			width:100%;
+			border: 5px groove @colorF;
+			border-radius:5%;
+		.linkA{
+margin-bottom:5%;
+			}
 			a {
-				margin: 1%;
-				text-decoration: underline overline @colorF;
+				margin: 2%;
+				text-decoration: underline overline @colorB;
 				font-size: 25px;
-				color: @colorB;
+				color: @colorA;
 				cursor: grabbing;
 				font-family: @fontTitle;
+				padding:1%;
+				&:hover{
+					color: @colorF;
+					
+				}
+				
+				
 			}
 		}
 	}
