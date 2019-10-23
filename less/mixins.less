@@ -1,20 +1,22 @@
 .btn() {
     display: block;
-    background: @colorB;
+    background: @colorC;
     margin: 0 1% 2%;
     cursor: grab;
     width: 98%;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     border-radius: 5px;
     border: 3px groove @colorF;
     color: @colorA;
     font-family:@fontTitle;
+    text-decoration:underline overline @colorB;
+    padding:1%;
     @media @phone{
         font-size:15px;
       }
     &:hover {
-      background: @colorC;
+      
       color: @colorB;
       
       
