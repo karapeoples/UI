@@ -310,7 +310,7 @@ template {
   flex-flow: wrap;
 }
 .navbar-container img {
-  margin: 1rem 0 1rem 0;
+  margin: 1% 0;
 }
 .navbar-container nav {
   display: flex;
@@ -318,14 +318,15 @@ template {
   padding-right: 28px;
 }
 .navbar-container nav a {
-  margin-left: 3rem;
-  font-size: 1.6rem;
+  margin-left: 3%;
+  font-size: 20px;
   list-style: none;
   color: #171717;
+  text-decoration: none;
 }
 .navbar-container nav .landing-btn {
-  font-size: 1.4rem;
-  padding: 12px 25px;
+  font-size: 15px;
+  padding: 10px 35px;
   background: #ff822e;
   color: #F2F4F3;
   font-weight: 900;
@@ -369,7 +370,6 @@ h1 {
   position: relative;
   margin: auto;
   justify-content: space-evenly;
-  margin-top: 5%;
 }
 .container .card,
 .container2 .card {
