@@ -303,85 +303,50 @@ template {
 [hidden] {
   display: none;
 }
-.navBar {
+.navbar-container {
+  justify-content: space-between;
+  background-color: #F2F4F3;
   display: flex;
-  width: 98%;
-  margin: 1%;
-  background: #575366;
-  border: 3px groove #171717;
+  flex-flow: wrap;
 }
-.navBar .logo {
-  width: 33%;
-  margin: 1%;
+.navbar-container img {
+  margin: 1rem 0 1rem 0;
 }
-.navBar .logo img {
-  width: 100%;
-  border: 5px groove #ff822e;
-  border-radius: 5%;
-}
-.navBar .buttons {
-  width: 33%;
-  margin: 1%;
-}
-.navBar .buttons button {
-  display: block;
-  background: #F2F4F3;
-  margin: 0 1% 2%;
-  cursor: grab;
-  width: 98%;
-  text-align: center;
-  font-size: 25px;
-  border-radius: 5px;
-  border: 3px groove #ff822e;
-  color: #171717;
-  font-family: 'Merriweather', serif;
-}
-@media (max-width: 500px) {
-  .navBar .buttons button {
-    font-size: 15px;
-  }
-}
-.navBar .buttons button:hover {
-  background: #6e7dab;
-  color: #F2F4F3;
-}
-.navBar .buttons .btnA {
-  margin-top: 5%;
-}
-.navBar .nav {
-  width: 33%;
-  margin: 1%;
-}
-.navBar .nav nav {
+.navbar-container nav {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  width: 100%;
-  border: 5px groove #ff822e;
-  border-radius: 5%;
+  padding-right: 28px;
 }
-.navBar .nav nav .linkA {
-  margin-bottom: 5%;
-}
-.navBar .nav nav a {
-  margin: 2%;
-  text-decoration: underline overline #F2F4F3;
-  font-size: 25px;
+.navbar-container nav a {
+  margin-left: 3rem;
+  font-size: 1.6rem;
+  list-style: none;
   color: #171717;
-  cursor: grabbing;
-  font-family: 'Merriweather', serif;
-  padding: 1%;
 }
-.navBar .nav nav a:hover {
-  color: #ff822e;
+.navbar-container nav .landing-btn {
+  font-size: 1.4rem;
+  padding: 12px 25px;
+  background: #ff822e;
+  color: #F2F4F3;
+  font-weight: 900;
+  overflow: hidden;
+  border-radius: 7px;
+  border: none;
+  position: relative;
+  z-index: 9;
+  margin-left: 1.5rem;
+}
+.navbar-container nav .landing-btn:hover {
+  color: #171717;
+}
+@media (max-width: 800px) {
+  .navbar-container {
+    justify-content: center;
+  }
 }
 @media (max-width: 500px) {
-  .navBar {
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-  .navBar .logo {
-    width: 100%;
+  .navbar-container {
+    justify-content: center;
   }
 }
 footer {
@@ -416,26 +381,20 @@ body .title .cta {
   text-align: center;
 }
 body .title button {
-  display: block;
-  background: #F2F4F3;
-  margin: 0 1% 2%;
-  cursor: grab;
-  width: 98%;
-  text-align: center;
-  font-size: 25px;
-  border-radius: 5px;
-  border: 3px groove #ff822e;
-  color: #171717;
-  font-family: 'Merriweather', serif;
-}
-@media (max-width: 500px) {
-  body .title button {
-    font-size: 15px;
-  }
+  font-size: 1.4rem;
+  padding: 12px 25px;
+  background: #ff822e;
+  color: #F2F4F3;
+  font-weight: 900;
+  overflow: hidden;
+  border-radius: 7px;
+  border: none;
+  position: relative;
+  z-index: 9;
+  margin-left: 1.5rem;
 }
 body .title button:hover {
-  background: #6e7dab;
-  color: #F2F4F3;
+  color: #171717;
 }
 body .secondTitle {
   font-size: 25px;

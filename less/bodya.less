@@ -1,7 +1,8 @@
-body {
-	background: @colorB;
+h1{
+	font-size: 50px;
+	margin-top: 5%;
+	text-align: center;
 }
-
 .container,
 .container2 {
 	display: flex;
@@ -12,6 +13,7 @@ body {
 	position: relative;
 	margin: auto;
 	justify-content: space-evenly;
+	margin-top:5%;
 
 	.card {
 		position: relative;
@@ -23,12 +25,14 @@ body {
 			height: 200px;
 			overflow: hidden;
 			transition: 0.5s;
+			border-radius: 5%;
 			.face1 {
 				position: relative;
 				display: flex;
 				justify-content: center;
 				align-items: center;
 				z-index: 2;
+				
 				transform: translateY(100px);
 
 				.content {
@@ -47,8 +51,9 @@ body {
 }
 
 .face2 {
+	border: 6px groove @colorF;
 	position: relative;
-	background: @colorE;
+	background: @colorB;
 	padding: 1%;
 	.flex(center, center);
 	box-sizing: border-box;
@@ -63,14 +68,14 @@ body {
 		padding: 0;
 		h3 {
 			font-family: @fontTitle;
-			color: @colorB;
+			color: @colorE;
 			text-align: center;
 			margin-top: 10%;
 		}
 		p {
 			font-family: @fontText;
 			padding: 0;
-			color: @colorB;
+			color: @colorE;
 			margin: 3%;
 			text-align: center;
 		}
@@ -78,11 +83,11 @@ body {
 			font-family: @fontText;
 			margin-left: 40%;
 			display: inline-block;
-			text-decoration: underline overline @colorD;
+			text-decoration: underline overline @colorB;
 			font-weight: 900px;
-			color: @colorC;
+			color: @colorB;
 			padding: 5px;
-			background: @colorB;
+			background: @colorF;
 		}
 	}
 }

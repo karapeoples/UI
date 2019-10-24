@@ -1,93 +1,40 @@
-.navBar {
+.navbar-container {
+	//! Flex Box used here
+	justify-content: space-between;
+	background-color:@colorB;
 	display: flex;
-	width: 98%;
-	margin: 1%;
-	background: @colorE;
-	border: 3px groove @colorA;
-
-	.logo {
-		width: 33%;
-		margin: 1%;
-		margin: 1%;border: 5px groove @colorF;
-			border-radius: 5%;
-			padding:1%;
-			.border{
-				border-top: 2px solid @colorB;
-				width:75%;
-				margin-top: 1%;
-				margin-left: 13%;
-				border-bottom: 2px solid @colorB;
-				margin-bottom: -1%;
-			}
-			
-		img {
-			width: 75%;
-			margin:5%;
-			margin-left:13%;
-			background:@colorC;
-			border-radius:5%;
-			
-		}
+	flex-flow: wrap;
+	  
+	  img {
+	  margin: 1rem 0 1rem 0;
 	}
 
-	.buttons {
-		width: 33%;
-		margin: 1%;
-		button {
-			.btn();
-		}
-
-		.btnA {
-			margin-top: 5%;
-		}
+	nav {
+	  //! Flex Box used here
+	  display: flex;
+	  align-items: center;
+	  padding-right: 28px;
+  
+	  a {
+		margin-left: 3rem;
+		font-size: 1.6rem;
+		list-style: none;
+		color: @colorA;
+	  }
+	  .landing-btn {
+		.btn(@colorB, @colorF);
+	  }
 	}
+  }
 
-	.nav {
-		width: 33%;
-		margin: 1%;
-
-		nav {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			width: 98%;
-			border: 5px groove @colorF;
-			border-radius: 5%;
-			padding:1%;
-			.linkA {
-				margin-bottom: 5%;
-			}
-			a {
-				margin: 2%;
-				width: 50%;
-				text-align:center;
-				border-radius:15%;
-				text-decoration: underline overline @colorB;
-				background:@colorC;
-				font-size: 25px;
-				color: @colorA;
-				cursor: grabbing;
-				font-family: @fontTitle;
-				padding: 1%;
-				&:hover {
-					color: @colorF;
-					
-				}
-			}
-		}
-	}
-}
 @media @tablet{
-	nav{
-		margin-left:-2%;
+	.navbar-container{
+		justify-content: center;
 	}
 }
 @media @phone {
-	.navBar {
-		flex-direction: column-reverse;
-		align-items: center;
-		.logo {
-			width: 95%;
-		}
+	.navbar-container{
+		justify-content: center;
 	}
 }
+
